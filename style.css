@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #191e24;
+}
+
+.counter, .display{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.content{
+    background: #1111;
+    width: 540px;
+    height: 675px;
+    border-radius: 10px;
+}
+
+
+input{
+    width: 70%;
+    height: 5vw;
+}
+
+label{
+    background: none !important;
+    color: #fff;
+    display: inline-block;
+}
+
+
+.display{
+    width: 360px;
+    height: 481px;
+    background-color: rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    z-index: 999;
+    text-align: center;
+}
+
+.display h1{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 50px 0 0 0;
+}
+
+.display h2{
+    color:  #fff;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 4.2px;
+    margin: 5px 0 0 0;
+}
+.display h1, .display h2{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background: transparent;
+}
+input, label{
+    width: 70%;
+    height: 5vw;
+    text-align: center;
+    background: #fff;
+    border: none;
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: serif;
+    font-weight: 500;
+}
+/* Small devices (phones, 600px and below) */
+@media (max-width: 600px) {
+    .content {
+        width: 90%;
+        height: auto;
+    }
+    .display {
+        width: 90%;
+        height: auto;
+    }
+    input {
+        width: 90%;
+        height: 10vw;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 12px;
+    }
+   
+}
+
+/* Medium devices (tablets, 600px to 900px) */
+@media (min-width: 600px) and (max-width: 900px) {
+    .content {
+        width: 80%;
+        height: auto;
+    }
+    .display {
+        width: 80%;
+        height: auto;
+    }
+    input {
+        width: 80%;
+        height: 8vw;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 14px;
+    }
+   
+}
+
+/* Large devices (desktops, 900px and up) */
+@media (min-width: 900px) {
+    .content {
+        width: 540px;
+        height: 675px;
+    }
+    .display {
+        width: 360px;
+        height: 481px;
+    }
+    input {
+        width: 70%;
+        height: 5vw;
+    }
+    
+}
