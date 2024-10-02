@@ -64,7 +64,7 @@ label{
 }
 input, label{
     width: 70%;
-    height: 5vw;
+    height: 5vh;
     text-align: center;
     background: #fff;
     border: none;
@@ -74,10 +74,19 @@ input, label{
     font-weight: 500;
 }
 /* Small devices (phones, 600px and below) */
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
+    .counter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
     .content {
         width: 90%;
         height: auto;
+        display: flex;
+        justify-content: center;
     }
     .display {
         width: 90%;
@@ -85,7 +94,7 @@ input, label{
     }
     input {
         width: 90%;
-        height: 10vw;
+        height: 10vh;
     }
     h1 {
         font-size: 18px;
@@ -97,7 +106,7 @@ input, label{
 }
 
 /* Medium devices (tablets, 600px to 900px) */
-@media (min-width: 600px) and (max-width: 900px) {
+/* @media (min-width: 600px) and (max-width: 900px) {
     .content {
         width: 80%;
         height: auto;
@@ -134,4 +143,4 @@ input, label{
         height: 5vw;
     }
     
-}
+} */
